@@ -1,0 +1,46 @@
+[versions]
+#Plugin
+androidApplicationPlugin = "8.3.2"
+googleServices = "4.4.2"
+jetbrainsKotlinAndroidPlugin = "1.9.22"
+kaptPlugin = "1.9.22"
+androidLibraryPlugin = "8.3.2"
+serializationPlugin = "1.8.0"
+hiltPlugin = "2.51"
+#Libraries
+coreKtx = "1.13.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.1"
+constraintlayout = "2.1.4"
+hilt-android = "2.51"
+serialization = "1.6.3"
+retrofit = "2.9.0"
+converter-gson = "2.9.0"
+logging-interceptor = "4.12.0"
+play-services-auth = "20.4.0"
+activity-ktx = "1.5.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+google-services = { module = "com.google.gms:google-services", version.ref = "googleServices" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt-android" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt-android" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "converter-gson" }
+logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "logging-interceptor" }
+play-services-auth= { group = "com.google.android.gms", name = "play-services-auth", version.ref = "play-services-auth"}
+activity-ktx= { group = "androidx.activity", name = "activity-ktx", version.ref = "activity-ktx"}
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "androidApplicationPlugin" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "jetbrainsKotlinAndroidPlugin" }
+kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kaptPlugin" }
+androidLibrary = { id = "com.android.library", version.ref = "androidLibraryPlugin" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "serializationPlugin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hiltPlugin" }
